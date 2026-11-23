@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shymaa Mohamed – AI &amp; Data Science Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f8f7; --surface:#e3efed; --ink:#0d2a2e; --muted:#476065; --line:#b9d3cf; --accent:#0b6b64; --accent-ink:#ffffff;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Figtree","Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1a1d; --surface:#11292d; --ink:#e4f1ef; --muted:#9bb8b4; --line:#244148; --accent:#5ad6c8; --accent-ink:#06201f;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1a1d; --surface:#11292d; --ink:#e4f1ef; --muted:#9bb8b4; --line:#244148; --accent:#5ad6c8; --accent-ink:#06201f;
+  color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding:1.5rem 0;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent);text-decoration:underline}
+
+.hero{padding:3.5rem 0 2rem}
+.hero h1{font:800 clamp(3rem,11vw,7rem)/.95 var(--display);letter-spacing:-.03em;margin:0 0 1.5rem}
+.hero p{max-width:36rem;font-size:1.25rem;color:var(--muted);margin:0 0 1.75rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:.5rem;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+.wave{display:block;width:100%;height:auto;margin:2.5rem 0 0;color:var(--accent)}
+
+section{padding:3rem 0 .5rem}
+h2{font:700 clamp(1.75rem,4vw,2.5rem)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 1.25rem}
+h3{font:700 1.25rem/1.3 var(--display);margin:0}
+.about p{max-width:42rem;margin:0 0 1rem}
+
+.timeline{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 1.75rem}
+.timeline li::before{content:"";position:absolute;left:calc(-1.5rem - 7px);top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.when{color:var(--muted);font-size:.95rem;margin:0}
+.timeline p{margin:.15rem 0 0;max-width:40rem}
+
+.project{border:2px solid var(--line);border-radius:.75rem;padding:1.75rem;background:var(--surface)}
+.project p{max-width:42rem;margin:.75rem 0 0}
+.tags{margin:1rem 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.5rem}
+.tags li{border:1px solid var(--line);background:var(--bg);border-radius:2rem;padding:.15rem .8rem;font-size:.95rem}
+
+dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:.6rem 2rem}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+@media (max-width:34rem){dl{grid-template-columns:1fr;gap:.1rem}dd{margin-bottom:.8rem}}
+
+.contact p{max-width:36rem}
+footer{margin-top:3rem;padding:1.5rem 0 2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Shymaa Mohamed</h1>
+    <p>I’m a computer science student at E-JUST, majoring in AI and data science. I build with Python and the web, and I make video and content on the side.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <svg class="wave" viewBox="0 0 800 40" preserveAspectRatio="none" aria-hidden="true" height="40">
+      <path d="M0 20 Q 25 0 50 20 T 100 20 T 150 20 T 200 20 T 250 20 T 300 20 T 350 20 T 400 20 T 450 20 T 500 20 T 550 20 T 600 20 T 650 20 T 700 20 T 750 20 T 800 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About me</h2>
+      <p>I’m in my third year at the Egypt-Japan University of Science and Technology. I started teaching HTML and CSS in 2022 through a programming team I founded, and in 2023 I won the State Award for the Young Creator in the applications and websites category.</p>
+      <p>Today I split my time between studying AI, working on multilingual AI training projects at Outlier, and creating content for student communities at E-JUST.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li><h3>AI training, multilingual projects · Outlier</h3><p class="when">Since Nov 2026</p><p>Evaluating and improving AI model responses across languages.</p></li>
+        <li><h3>Content creator · IEEE RAS at E-JUST</h3><p class="when">Since Oct 2026</p><p>Volunteer creating content that promotes the society’s events.</p></li>
+        <li><h3>Freelance video editor · Presence</h3><p class="when">Since Jun 2026</p><p>Editing videos and social content for a formal wear brand.</p></li>
+        <li><h3>Head of media · Cyber Security Club, E-JUST</h3><p class="when">Since Nov 2025</p><p>Volunteer leading the club’s media and social presence.</p></li>
+        <li><h3>Technical support · Sutherland, AT&amp;T account</h3><p class="when">Since Jun 2025</p><p>Helping customers by phone with technical issues.</p></li>
+        <li><h3>Founder and manager · Dexa clothing brand</h3><p class="when">Since May 2023</p><p>Ran a clothing brand from sourcing to sales.</p></li>
+        <li><h3>Founder and instructor · Mega101 programming team</h3><p class="when">Since Oct 2022</p><p>Taught an HTML and CSS course to beginners.</p></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Assessment-Aware Study Planner</h3>
+        <p>A planner that predicts how a student will do on each assignment, then works out the fewest study sessions needed and fits them into a weekly schedule. A neural network predicts marks from the OULAD dataset, search algorithms find the minimum sessions, and a constraint solver places them in time slots.</p>
+        <ul class="tags">
+          <li>Python</li><li>Neural network</li><li>Uniform cost and greedy search</li><li>Backtracking, forward checking, AC-3</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl>
+        <dt>Programming</dt><dd>Python, C++, SQL, JavaScript, HTML, CSS</dd>
+        <dt>Tools</dt><dd>Git, GitHub</dd>
+        <dt>Also</dt><dd>Video editing, content creation, teaching, team leadership</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I’m open to internships, freelance work, and collaborations. The best way to reach me is by email.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:1shymamohamed1@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/shymaa-mohamed-7a3973245" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Shymaa Mohamed</footer>
+</div>
+</body>
+</html>
